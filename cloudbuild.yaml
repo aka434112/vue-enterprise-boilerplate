@@ -10,5 +10,5 @@ steps:
   args: ['run', 'build']
   dir: 'function/dir/from/repo/root'
 - name: gcr.io/cloud-builders/gsutil
-  args: ["-m", "rsync", "-r", "-c", "-d", "./dist", "gs://deploying-spa-behind-a-cdn"]
+  args: ["-m", "rsync", "-r", "-c", "-d", "./dist", "gs://spa-behind-a-cdn"]
 # [END functions_ci_cd_cloud_build]
