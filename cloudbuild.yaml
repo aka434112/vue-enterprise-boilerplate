@@ -1,11 +1,11 @@
 
 # [START functions_ci_cd_cloud_build]
 steps:
-- name: node
+- name: node:12
   entrypoint: npm
   args: ['install']
   dir: 'function/dir/from/repo/root'
-- name: node
+- name: node:12
   entrypoint: npm
   args: ['run', 'build']
   dir: 'function/dir/from/repo/root'
